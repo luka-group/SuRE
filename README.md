@@ -12,6 +12,8 @@ The summarization task takes a context as the input sequence and a summary targe
 
 ![Figure 1. Example for SuRE Inference](https://github.com/luka-group/SuRE/blob/main/figure1.pdf)
 
+<embed src="./figure1.pdf" type="application/pdf">
+
 ## Data
 TBD
 

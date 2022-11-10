@@ -21,7 +21,12 @@ TBD
 
 ## Citing
 
-TBD
+@article{lu2022summarization,
+  title={Summarization as Indirect Supervision for Relation Extraction},
+  author={Lu, Keming and Hsu, I and Zhou, Wenxuan and Ma, Mingyu Derek and Chen, Muhao and others},
+  journal={arXiv preprint arXiv:2205.09837},
+  year={2022}
+}
 
 ## Requirements
 

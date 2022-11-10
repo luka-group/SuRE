@@ -1,0 +1,21 @@
+{
+    "Other": "{subj} is not related to {obj}",
+    "Component-Whole(e1,e2)": "{subj} is the component of {obj}",
+    "Component-Whole(e2,e1)": "{subj} has the component {obj}",
+    "Instrument-Agency(e1,e2)": "{subj} is the instrument of {obj}",
+    "Instrument-Agency(e2,e1)": "{subj} has the instrument {obj}",
+    "Member-Collection(e1,e2)": "{subj} is the member of {obj}",
+    "Member-Collection(e2,e1)": "{subj} has the member {obj}",
+    "Cause-Effect(e1,e2)": "{subj} has the effect {obj}",
+    "Cause-Effect(e2,e1)": "{subj} is the effect of {obj}",
+    "Entity-Destination(e1,e2)": "{subj} locates in {obj}",
+    "Entity-Destination(e2,e1)": "{subj} is the destination of {obj}",
+    "Content-Container(e1,e2)": "{subj} is the content in {obj}",
+    "Content-Container(e2,e1)": "{subj} contains {obj}",
+    "Message-Topic(e1,e2)": "{subj} is the message on {obj}",
+    "Message-Topic(e2,e1)": "{subj} is the topic of {obj}",
+    "Product-Producer(e1,e2)": "{subj} is the product of {obj}",
+    "Product-Producer(e2,e1)": "{subj} produces {obj}",
+    "Entity-Origin(e1,e2)": "{subj} origins from {obj}",
+    "Entity-Origin(e2,e1)": "{subj} is the origin of {obj}"
+}

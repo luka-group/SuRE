@@ -39,6 +39,7 @@ if __name__ == "__main__":
 	config = f"output/pretrained/pretrained_model_{dataset}_{data_version}_{model_name}"
 	#model_name = "pegasus-large-zeroshot"
 	#config = "google/pegasus-large"
+
 	input_path = f"./data/{dataset}/{data_version}/{split}.json"
 	if data_version == "v10":
 		template_path = f"data/templates/{dataset}/rel2temp_na_two_entities.json"

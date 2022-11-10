@@ -1,0 +1,128 @@
+{
+    "ORGANIZATION|PERSON": [
+        "org:top_members/employees",
+        "org:shareholders",
+        "org:founded_by"
+    ],
+    "PERSON|ORGANIZATION": [
+        "per:employee_of",
+        "per:schools_attended"
+    ],
+    "ORGANIZATION|ORGANIZATION": [
+        "org:parents",
+        "org:shareholders",
+        "org:alternate_names",
+        "org:member_of",
+        "org:members",
+        "org:subsidiaries"
+    ],
+    "PERSON|CITY": [
+        "per:city_of_birth",
+        "per:cities_of_residence",
+        "per:city_of_death"
+    ],
+    "PERSON|PERSON": [
+        "per:other_family",
+        "per:alternate_names",
+        "per:parents",
+        "per:children",
+        "per:spouse",
+        "per:siblings"
+    ],
+    "PERSON|TITLE": [
+        "per:title"
+    ],
+    "PERSON|RELIGION": [
+        "per:religion"
+    ],
+    "PERSON|NUMBER": [
+        "per:age"
+    ],
+    "ORGANIZATION|URL": [
+        "org:website"
+    ],
+    "PERSON|STATE_OR_PROVINCE": [
+        "per:stateorprovinces_of_residence",
+        "per:stateorprovince_of_death",
+        "per:stateorprovince_of_birth"
+    ],
+    "PERSON|COUNTRY": [
+        "per:country_of_death",
+        "per:origin",
+        "per:country_of_birth",
+        "per:countries_of_residence"
+    ],
+    "ORGANIZATION|CITY": [
+        "org:city_of_headquarters"
+    ],
+    "ORGANIZATION|COUNTRY": [
+        "org:parents",
+        "org:country_of_headquarters",
+        "org:member_of",
+        "org:members",
+        "org:subsidiaries"
+    ],
+    "ORGANIZATION|STATE_OR_PROVINCE": [
+        "org:parents",
+        "org:member_of",
+        "org:stateorprovince_of_headquarters"
+    ],
+    "ORGANIZATION|NUMBER": [
+        "org:number_of_employees/members"
+    ],
+    "ORGANIZATION|RELIGION": [
+        "org:political/religious_affiliation"
+    ],
+    "ORGANIZATION|DATE": [
+        "org:dissolved",
+        "org:founded"
+    ],
+    "PERSON|DURATION": [
+        "per:age"
+    ],
+    "PERSON|DATE": [
+        "per:date_of_birth",
+        "per:date_of_death"
+    ],
+    "PERSON|NATIONALITY": [
+        "per:country_of_death",
+        "per:origin",
+        "per:country_of_birth",
+        "per:countries_of_residence"
+    ],
+    "PERSON|CAUSE_OF_DEATH": [
+        "per:cause_of_death"
+    ],
+    "ORGANIZATION|LOCATION": [
+        "org:city_of_headquarters",
+        "org:parents",
+        "org:country_of_headquarters",
+        "org:member_of",
+        "org:stateorprovince_of_headquarters",
+        "org:subsidiaries"
+    ],
+    "PERSON|LOCATION": [
+        "per:origin",
+        "per:cities_of_residence",
+        "per:countries_of_residence",
+        "per:country_of_death",
+        "per:employee_of",
+        "per:stateorprovince_of_death",
+        "per:city_of_birth",
+        "per:stateorprovinces_of_residence",
+        "per:city_of_death",
+        "per:country_of_birth"
+    ],
+    "PERSON|MISC": [
+        "per:alternate_names"
+    ],
+    "PERSON|CRIMINAL_CHARGE": [
+        "per:charges"
+    ],
+    "ORGANIZATION|IDEOLOGY": [
+        "org:political/religious_affiliation"
+    ],
+    "ORGANIZATION|MISC": [
+        "org:alternate_names"
+    ]
+}

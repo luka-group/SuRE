@@ -15,8 +15,8 @@ CUDA_VISIBLE_DEVICES=$cuda_device_id python -u run_pretrained_aug_tag_eval.py\
     --model_name_or_path $model_source/$pretrain_model\
 	--train_file $dataset_path/$dataset_name/$train_file_name\
 	--validation_file $dataset_path/$dataset_name/$valid_file_name\
-	--type_file $dataset_path/$dataset_name/v1/type.json\
-	--type_constraint_file $dataset_path/$dataset_name/v1/type_constraint.json\
+	--type_file $dataset_path/$dataset_name/types/type.json\
+	--type_constraint_file $dataset_path/$dataset_name/types/type_constraint.json\
 	--template_file $dataset_path/templates/$dataset_name/rel2temp.json \
 	--text_column text \
 	--summary_column target \

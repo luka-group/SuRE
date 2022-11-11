@@ -180,7 +180,7 @@ CUDA_VISIBLE_DEVICES=$cuda_device_id python -u run_pretrained_aug_tag_eval.py\
 
 ### How to run SuRE on my customized datasets :question:
 
-We provide an [example data preprocessing script](https://github.com/luka-group/SuRE/blob/main/data_scripts/transform_tacred.py) that we used to transform raw data of TACRED into summarization data.
+We provide a [data preprocessing script example](https://github.com/luka-group/SuRE/blob/main/data_scripts/transform_tacred.py) that we used to transform raw data of TACRED into summarization data.
 
 In general, you need to preprocess your relation extraction datasets with following steps to run training and inference of SuRE on customized datasets.
 - Augment context with entity mentions following the template `The head entity is {subj} . The tail entity is {obj} . `

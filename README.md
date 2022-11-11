@@ -16,6 +16,26 @@ The summarization task takes a context as the input sequence and a summary targe
 
 ![Figure 1. Example for SuRE Inference](https://github.com/luka-group/SuRE/blob/main/figure1.png)
 
+
+## Requirements
+
+SuRE is tested to work under Python 3.8+. We trained and evaluated SuRE on 4 NVIDIA RTX A5000 with CUDA VERSION 11.3. Packages required include
+
+- accelerate==0.5.1
+- datasets==1.12.1
+- filelock==3.3.0
+- huggingface_hub==0.0.19
+- matplotlib==3.5.0
+- nltk==3.6.3
+- numpy==1.20.3
+- rouge==1.0.1
+- scikit_learn==1.1.0
+- torch==1.10.2+cu113
+- tqdm==4.62.3
+- transformers==4.11.3
+
+All packages can be installed by `pip install -r requirements.txt`
+
 ## Data
 
 ### Relation Templates
@@ -183,25 +203,6 @@ Following parts are optional, you can still run SuRE on your datasets without th
   year={2022}
 }
 ```
-
-## Requirements
-
-SuRE is tested to work under Python 3.8+. We trained and evaluated SuRE on 4 NVIDIA RTX A5000 with CUDA VERSION 11.3. Packages required include
-
-- accelerate==0.5.1
-- datasets==1.12.1
-- filelock==3.3.0
-- huggingface_hub==0.0.19
-- matplotlib==3.5.0
-- nltk==3.6.3
-- numpy==1.20.3
-- rouge==1.0.1
-- scikit_learn==1.1.0
-- torch==1.10.2+cu113
-- tqdm==4.62.3
-- transformers==4.11.3
-
-All packages can be installed by `pip install -r requirements.txt`
 
 ## License
 

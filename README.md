@@ -13,7 +13,47 @@ The summarization task takes a context as the input sequence and a summary targe
 ![Figure 1. Example for SuRE Inference](https://github.com/luka-group/SuRE/blob/main/figure1.png)
 
 ## Data
-TBD
+
+### Relation Templates
+
+We collect relation templates for TACRED and TACREV from [Sainz et al.](https://github.com/osainz59/Ask2Transformers) and do manual refinements. We also manually constructed relation templates for other popular RE datasets, such as DocRED, TACREV, ReTACRED, and Semeval.
+
+```
+data/templates
+- tacred: relation templates for TACRED
+  - rel2temp.json: relation templates used in the main result of our paper
+  - rel2temp_forward.json: another semantic templates for ablation study
+  - rel2temp_na_two_entities.json: relation templates for ablation study of the NA template
+  - rel2temp_raw_relation.json: naive structural templates for ablation study
+- docred: relation templates for DocRED
+- retacred: relation templates for ReTACRED
+- tacrev: relation templates for TACREV
+- semeval: relation templates for SemEVAL
+```
+
+Formats of template files: JSON files with relation names as keys and templates as values. {subj} and {obj} are placeholders for head and tail entities. Customized relation template files in the same format can easily be used in our codes.
+
+```
+{
+  "no_relation": "{subj} has no known relations to {obj}", # We use this template for the NA relation in all datasets
+}
+```
+
+## Processed TACRED data
+
+```
+data/tacred/
+- tacred_splits: indice of tacred samples for the low-resource training (1%/5%/10%) from [Sainz et al.](https://github.com/osainz59/Ask2Transformers)
+- types: type-related auxiliary data in TACRED
+  - type.json: a list of entity type in JSON format
+  - type_constraint.json: a mapping between head|entity types and feasible relations
+- v0: processed full-training TACRED dataset
+- v0.01: processed TACRED dataset under the 1% scenario
+- v0.05: processed TACRED dataset under the 5% scenario
+- v0.1: processed TACRED dataset under the 10% scenario
+```
+
+
 
 ## Run
 

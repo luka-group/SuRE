@@ -13,7 +13,29 @@ The summarization task takes a context as the input sequence and a summary targe
 ![Figure 1. Example for SuRE Inference](https://github.com/luka-group/SuRE/blob/main/figure1.png)
 
 ## Data
-TBD
+
+### Templates
+
+We collect relation templates for TACRED and TACREV from [Sainz et al.](https://github.com/osainz59/Ask2Transformers) and do manual refinements. We also manually constructed relation templates for other popular RE datasets, such as DocRED, TACREV, ReTACRED, and Semeval.
+
+```
+data/templates
+- tacred
+- docred
+- retacred
+- tacrev
+- semeval
+```
+
+Formats of template files: JSON files with relation names as keys and templates as values. {subj} and {obj} are placeholders for head and tail entities.
+
+```
+{
+  "relation_name": "{subj} has no known relations to {obj}",
+}
+```
+
+## Processed TACRED data
 
 ## Run
 

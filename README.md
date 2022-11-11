@@ -2,7 +2,7 @@
 
 Authors: Keming Lu, I-Hung Hsu, Wenxuan Zhou, Mingyu Derek Ma, Muhao Chen
 
-:tada: This work is accepted by Findings of EMNLP2022 :tada:
+:tada: This work is accepted by Findings of EMNLP2022 :tada: [Paper](https://arxiv.org/pdf/2205.09837.pdf)
 
 - [Nov. 10th 2022] We have shared codes for training and inference of SuRE. Come and try SuRE on TACRED in both full-training and low-resource settings or your customized datasets!
 

@@ -2,6 +2,7 @@ import json
 import os
 import torch
 import transformers
+import argparse
 from utils.trie import Trie, PredictTrie
 from transformers import AutoModelForSeq2SeqLM
 from transformers import AutoTokenizer
@@ -31,37 +32,36 @@ def load_inputs(input_path):
 
 
 if __name__ == "__main__":
-	device = torch.device("cuda:3")
-	dataset = "tacrev"
-	data_version = "v7"
-	split = "test"
-	model_name = "bart-large-xsum"
-	config = f"output/pretrained/pretrained_model_{dataset}_{data_version}_{model_name}"
-	#model_name = "pegasus-large-zeroshot"
-	#config = "google/pegasus-large"
 
-	input_path = f"./data/{dataset}/{data_version}/{split}.json"
-	if data_version == "v10":
-		template_path = f"data/templates/{dataset}/rel2temp_na_two_entities.json"
-	elif "v11" in data_version:
-		template_path = f"data/templates/{dataset}/rel2temp_raw_relation.json"
-	elif "v12" in data_version:
-		template_path = f"data/templates/{dataset}/rel2temp_forward.json"
-	else:
-		template_path = f"data/templates/{dataset}/rel2temp.json"
-	type_constraint_path = f"data/{dataset}/v1/type_constraint.json"
-	type_constraint = True
-	output_path = f"output/scoring/{dataset}_{split}_{data_version}_{'trie_type_constraint' if type_constraint else 'no_type_constraint'}_{model_name}.json"
+	parser = argparse.ArgumentParser(
+		description = 'run trie scoring with pretrained summarization model')
+	parser.add_argument('--dataset', type=str, help="name of dataset")
+	parser.add_argument('--data_version', type=str, help="name of particular data version")
+	parser.add_argument('--split', type=str, help="name of data split")
+	parser.add_argument('--model_name', type=str, help="name of the backbone summarization model")
+	parser.add_argument('--config', type=str, help="config of the checkpoint")
+	parser.add_argument('--cuda', type=int, help="cuda index")
+	parser.add_argument('--type_constraint', action='store_true')
+	args = parser.parse_args()
 
-	tokenizer = AutoTokenizer.from_pretrained(config)
-	trie = PredictTrie(tokenizer, force_end="bart" in config)
-	model = AutoModelForSeq2SeqLM.from_pretrained(config).to(device)
+	for arg in vars(args):
+		print(f"{arg}: {getattr(args, arg)}")
+
+	device = torch.device(f"cuda:{args.cuda}")
+	input_path = f"./data/{args.dataset}/{args.data_version}/{args.split}.json"
+	template_path = f"data/templates/{args.dataset}/rel2temp.json"
+	type_constraint_path = f"data/{args.dataset}/types/type_constraint.json"
+	output_path = f"output/scoring/{args.dataset}_{args.split}_{args.data_version}_{'trie_type_constraint' if args.type_constraint else 'no_type_constraint'}_{args.model_name}.json"
+
+	tokenizer = AutoTokenizer.from_pretrained(args.config)
+	trie = PredictTrie(tokenizer, force_end="bart" in args.config)
+	model = AutoModelForSeq2SeqLM.from_pretrained(args.config).to(device)
 	model.eval()
 
 	with open(template_path) as f:
 		templates = json.load(f)
 
-	if type_constraint:
+	if args.type_constraint:
 		with open(type_constraint_path) as f:
 			type_constraint_dict = json.load(f)
 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
 		inputs = tokenizer.batch_encode_plus([sentence], return_tensors="pt",
 			max_length=256, padding='max_length', truncation=True).to(device)
 
-		if type_constraint:
+		if args.type_constraint:
 			subj_type = each["subj_type"]
 			obj_type = each["obj_type"]
 			temp = {"no_relation": templates["no_relation"]}

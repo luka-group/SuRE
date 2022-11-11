@@ -1,7 +1,7 @@
 dataset_path=data
 dataset_name=tacred
-data_version=v0
-cuda_device_id=4
+data_version=v0_0.01
+cuda_device_id=3
 train_file_name=${data_version}/train.json
 valid_file_name=${data_version}/dev.json
 

@@ -1,17 +1,21 @@
 import json
 import numpy as np
+import argparse
 from tqdm import tqdm
 from sklearn.metrics import f1_score, classification_report
 
 
 if __name__ == "__main__":
-	input_file_path = "output/scoring/tacred_test_v0_trie_type_constraint_pegasus-large_eval_1e4_wd_5e6.json"
-	template_file_path = "data/templates/tacred/rel2temp.json"
+	parser = argparse.ArgumentParser(
+		description = 'calculate F1 score from scoring files')
+	parser.add_argument('--input_file_path', type=str, help="path of the input scoring file")
+	parser.add_argument('--template_file_path', type=str, help="path of the template file")
+	args = parser.parse_args()
 
-	with open(input_file_path) as f:
+	with open(args.input_file_path) as f:
 		data = json.load(f)
 
-	with open(template_file_path) as f:
+	with open(args.template_file_path) as f:
 		templates = json.load(f)
 
 	relation_map = {rel:i for i, rel in enumerate(list(templates.keys()))}

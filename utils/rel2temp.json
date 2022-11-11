@@ -1,0 +1,136 @@
+{
+    "no_relation": ["{subj} and {obj} are not related"],
+    "per:alternate_names": ["{subj} is also known as {obj}"],
+    "per:date_of_birth": [
+        "{subj}\u00e2\u0080\u0099s birthday is on {obj}",
+        "{subj} was born in {obj}"
+    ],
+    "per:age": ["{subj} is {obj} years old"],
+    "per:country_of_birth": ["{subj} was born in {obj}"],
+    "per:stateorprovince_of_birth": ["{subj} was born in {obj}"],
+    "per:city_of_birth": ["{subj} was born in {obj}"],
+    "per:origin": ["{obj} is the nationality of {subj}"],
+    "per:date_of_death": ["{subj} died in {obj}"],
+    "per:country_of_death": ["{subj} died in {obj}"],
+    "per:stateorprovince_of_death": ["{subj} died in {obj}"],
+    "per:city_of_death": ["{subj} died in {obj}"],
+    "per:cause_of_death": ["{obj} is the cause of {subj}’s death"],
+    "per:countries_of_residence": [
+        "{subj} lives in {obj}",
+        "{subj} has a legal order to stay in {obj}"
+    ],
+    "per:stateorprovinces_of_residence": [
+        "{subj} lives in {obj}",
+        "{subj} has a legal order to stay in {obj}"
+    ],
+    "per:cities_of_residence": [
+        "{subj} lives in {obj}",
+        "{subj} has a legal order to stay in {obj}"
+    ],
+    "per:schools_attended": [
+        "{subj} studied in {obj}",
+        "{subj} graduated from {obj}"
+    ],
+    "per:title": ["{subj} is a {obj}"],
+    "per:employee_of": [
+        "{subj} is member of {obj}",
+        "{subj} is an employee of {obj}"
+    ],
+    "per:religion": [
+        "{subj} belongs to {obj} religion",
+        "{obj} is the religion of {subj}",
+        "{subj} believe in {obj}"
+    ],
+    "per:spouse": [
+        "{subj} is the spouse of {obj}",
+        "{subj} is the wife of {obj}",
+        "{subj} is the husband of {obj}"
+    ],
+    "per:parents": [
+        "{obj} is the parent of {subj}",
+        "{obj} is the mother of {subj}",
+        "{obj} is the father of {subj}",
+        "{subj} is the son of {obj}",
+        "{subj} is the daughter of {obj}"
+    ],
+    "per:children": [
+        "{subj} is the parent of {obj}",
+        "{subj} is the mother of {obj}",
+        "{subj} is the father of {obj}",
+        "{obj} is the son of {subj}",
+        "{obj} is the daughter of {subj}"
+    ],
+    "per:siblings": [
+        "{subj} and {obj} are siblings",
+        "{subj} is brother of {obj}",
+        "{subj} is sister of {obj}"
+    ],
+    "per:other_family": [
+        "{subj} and {obj} are family",
+        "{subj} is a brother in law of {obj}",
+        "{subj} is a sister in law of {obj}",
+        "{subj} is the cousin of {obj}",
+        "{subj} is the uncle of {obj}",
+        "{subj} is the aunt of {obj}",
+        "{subj} is the grandparent of {obj}",
+        "{subj} is the grandmother of {obj}",
+        "{subj} is the grandson of {obj}",
+        "{subj} is the granddaughter of {obj}"
+    ],
+    "per:charges": [
+        "{subj} was convicted of {obj}",
+        "{obj} are the charges of {subj}"
+    ],
+    "org:alternate_names": ["{subj} is also known as {obj}"],
+    "org:political/religious_affiliation": [
+        "{subj} has political affiliation with {obj}",
+        "{subj} has religious affiliation with {obj}"
+    ],
+    "org:top_members/employees": [
+        "{obj} is a high level member of {subj}",
+        "{obj} is chairman of {subj}",
+        "{obj} is president of {subj}",
+        "{obj} is director of {subj}"
+    ],
+    "org:number_of_employees/members": [
+        "{subj} employs nearly {obj} people",
+        "{subj} has about {obj} employees"
+    ],
+    "org:members": ["{obj} is member of {subj}", "{obj} joined {subj}"],
+    "org:member_of": ["{subj} is member of {obj}", "{subj} joined {obj}"],
+    "org:subsidiaries": [
+        "{obj} is a subsidiary of {subj}",
+        "{obj} is a branch of {subj}"
+    ],
+    "org:parents": [
+        "{subj} is a subsidiary of {obj}",
+        "{subj} is a branch of {obj}"
+    ],
+    "org:founded_by": ["{subj} was founded by {obj}", "{obj} founded {subj}"],
+    "org:founded": [
+        "{subj} was founded in {obj}",
+        "{subj} was formed in {obj}"
+    ],
+    "org:dissolved": [
+        "{subj} existed until {obj}",
+        "{subj} disbanded in {obj}",
+        "{subj} dissolved in {obj}"
+    ],
+    "org:country_of_headquarters": [
+        "{subj} has its headquarters in {obj}",
+        "{subj} is located in {obj}"
+    ],
+    "org:stateorprovince_of_headquarters": [
+        "{subj} has its headquarters in {obj}",
+        "{subj} is located in {obj}"
+    ],
+    "org:city_of_headquarters": [
+        "{subj} has its headquarters in {obj}",
+        "{subj} is located in {obj}"
+    ],
+    "org:shareholders": ["{obj} holds shares in {subj}"],
+    "org:website": [
+        "{obj} is the URL of {subj}",
+        "{obj} is the website of {subj}"
+    ]
+}

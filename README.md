@@ -4,6 +4,7 @@ Authors: Keming Lu, I-Hung Hsu, Wenxuan Zhou, Mingyu Derek Ma, Muhao Chen
 
 :tada: This work is accepted by Findings of EMNLP2022 :tada: [Paper](https://arxiv.org/pdf/2205.09837.pdf)
 
+- [TODO] Codes for calibration and other ablation study/Data preprocess scripts for TACREV and SemEval
 - [Nov. 10th 2022] We have shared codes for training and inference of SuRE. Come and try SuRE on TACRED in both full-training and low-resource settings or your customized datasets!
 
 ## Overview
@@ -111,8 +112,8 @@ Data format:
 Download zip files of pretrained checkpoints from Google Drive:
 - TACRED full training: [Google Drive Link](https://drive.google.com/file/d/1e6naPQrL063AqtD3Q-kdrIKDPybhkZEt/view?usp=sharing)
 - TACRED low resource (1\%): [Google Drive Link](https://drive.google.com/file/d/1st-NkkrpIHPwXgdUoU04-qx4LAqs9J9S/view?usp=sharing)
-- TACRED low resource (5\%): WIP
-- TACRED low resource (10\%): WIP
+- TACRED low resource (5\%): [Google Drive Link](https://drive.google.com/file/d/1nYs7j48oVVT1yXnqZPPcEFrvVMNs4mHX/view?usp=sharing)
+- TACRED low resource (10\%): [Google Drive Link](https://drive.google.com/file/d/1zdhbi_WX_3aaVxwyI3TA17TXRyC3uLqw/view?usp=sharing)
 
 Run inference with Trie constrained decoding with script `predict_trie.sh` by setting following parameters in the script:
 

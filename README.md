@@ -110,7 +110,7 @@ Data format:
 
 Download zip files of pretrained checkpoints from Google Drive:
 - TACRED full training: [Google Drive Link](https://drive.google.com/file/d/1e6naPQrL063AqtD3Q-kdrIKDPybhkZEt/view?usp=sharing)
-- TACRED low resource (1\%): WIP
+- TACRED low resource (1\%): [Google Drive Link](https://drive.google.com/file/d/1st-NkkrpIHPwXgdUoU04-qx4LAqs9J9S/view?usp=sharing)
 - TACRED low resource (5\%): WIP
 - TACRED low resource (10\%): WIP
 

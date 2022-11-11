@@ -1,5 +1,7 @@
 # Summarization as Indirect Supervision for Relation Extraction
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/summarization-as-indirect-supervision-for/relation-extraction-on-tacred)](https://paperswithcode.com/sota/relation-extraction-on-tacred?p=summarization-as-indirect-supervision-for)
+
 Authors: Keming Lu, I-Hung Hsu, Wenxuan Zhou, Mingyu Derek Ma, Muhao Chen
 
 :tada: This work is accepted by Findings of EMNLP2022 :tada: [Paper](https://arxiv.org/pdf/2205.09837.pdf)

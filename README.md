@@ -196,10 +196,10 @@ Following parts are optional, you can still run SuRE on your datasets without th
 ## Citing
 
 ```
-@article{lu2022summarization,
+@inproceedings{lu2022summarization,
   title={Summarization as Indirect Supervision for Relation Extraction},
   author={Lu, Keming and Hsu, I and Zhou, Wenxuan and Ma, Mingyu Derek and Chen, Muhao and others},
-  journal={arXiv preprint arXiv:2205.09837},
+  booktitle={EMNLP - Findings},
   year={2022}
 }
 ```

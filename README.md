@@ -201,7 +201,7 @@ Following parts are optional, you can still run SuRE on your datasets without th
 ```
 @inproceedings{lu2022summarization,
   title={Summarization as Indirect Supervision for Relation Extraction},
-  author={Lu, Keming and Hsu, I and Zhou, Wenxuan and Ma, Mingyu Derek and Chen, Muhao and others},
+  author={Lu, Keming and Hsu, I-Hung and Zhou, Wenxuan and Ma, Mingyu Derek and Chen, Muhao and others},
   booktitle={EMNLP - Findings},
   year={2022}
 }
